@@ -13,6 +13,12 @@
  *
  * @package WordPress
  */
+
+if (file_exists($localConfig = __DIR__ . '/wp-config.local.php')) {
+	// Place local settings in wp-config.local.php
+	include $localConfig;
+}
+
 define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
 define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
@@ -23,13 +29,13 @@ define('WP_DEFAULT_THEME', 'solidarnost');
 define('DB_NAME', 'wp_solidarnost');
 
 /** MySQL database username */
-define('DB_USER', 'XXX');
+defined('DB_USER') || define('DB_USER', '*undefined*');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'XXX');
+defined('DB_PASSWORD') || define('DB_PASSWORD', '*undefined*');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+defined('DB_HOST') || define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -82,7 +88,7 @@ define('WPLANG', 'sl_SI');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+defined('WP_DEBUG') || define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
