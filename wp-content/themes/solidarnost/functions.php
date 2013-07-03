@@ -467,3 +467,75 @@ function wdc_no_more_jumping($link) {
 }
 add_filter('the_content_more_link', 'wdc_no_more_jumping');
 
+/* SAMO: This is an admin page for setting the carousel! */
+
+/*******************************************************************
+* These are settings for the Theme Customizer in the admin panel. 
+*******************************************************************/
+if ( ! function_exists( 'solidarnost_customizer' ) ) :
+	function solidarnost_customizer( $wp_customize ) {
+		
+		/* logo option */
+		$wp_customize->add_section( 'solidarnost_logo_section' , array(
+			'title'       => __( 'Site Logo', 'solidarnost' ),
+			'priority'    => 31,
+			'description' => __( 'Upload a logo to replace the default site name in the header', 'solidarnost' ),
+		) );
+		
+		$wp_customize->add_setting( 'solidarnost_logo' );
+		
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'solidarnost_logo', array(
+			'label'    => __( 'Choose your logo (ideal width is 100-300px and ideal height is 40-100px)', 'solidarnost' ),
+			'section'  => 'solidarnost_logo_section',
+			'settings' => 'solidarnost_logo',
+		) ) );
+	
+			/* slider options */
+		
+		$wp_customize->add_section( 'solidarnost_slider_section' , array(
+			'title'       => __( 'Slider Options', 'solidarnost' ),
+			'priority'    => 33,
+			'description' => __( 'Adjust the behavior of the image slider.', 'solidarnost' ),
+		) );
+		
+		$wp_customize->add_setting( 'solidarnost_slider_effect', array(
+			'default' => 'scrollHorz',
+			'capability' => 'edit_theme_options',
+		));
+		
+		 $wp_customize->add_control( 'effect_select_box', array(
+			'settings' => 'solidarnost_slider_effect',
+			'label' => __( 'Select Effect:', 'solidarnost' ),
+			'section' => 'solidarnost_slider_section',
+			'type' => 'select',
+			'choices' => array(
+				'scrollHorz' => 'Horizontal (Default)',
+				'scrollVert' => 'Vertical',
+				'tileSlide' => 'Tile Slide',
+				'tileBlind' => 'Blinds',
+			),
+		));
+		
+		$wp_customize->add_setting( 'solidarnost_slider_timeout' );
+		
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'solidarnost_slider_timeout', array(
+			'label'    => __( 'Autoplay Speed in Seconds (0 for Manual)', 'solidarnost' ),
+			'section'  => 'solidarnost_slider_section',
+			'settings' => 'solidarnost_slider_timeout',
+		) ) );
+		
+		$wp_customize->add_setting( 'solidarnost_slider_pager' );
+		
+		 $wp_customize->add_control('enable_pager', array(
+			'settings' => 'solidarnost_slider_pager',
+			'label' => __('Enable pager', 'solidarnost'),
+			'section' => 'solidarnost_slider_section',
+			'type' => 'checkbox',
+		));
+	
+	}
+endif;
+
+add_action('customize_register', 'solidarnost_customizer');
+
+
