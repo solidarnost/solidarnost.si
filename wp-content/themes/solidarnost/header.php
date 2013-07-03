@@ -54,13 +54,13 @@
 	<div id="main" class="wrapper">
 
 <?php 
-/* SAMO: Tukaj vrinem notri slider (carousel) */
+/* SAMO: Tukaj vrinem notri slider (carousel). Povzeto po temi Magazino. */
 ?>
 
         <div id="slide-wrap">
 			  <?php 
                 $args = array(
-                    'posts_per_page' => 10,
+                    'posts_per_page' => 4,
 					'post_status' => 'publish',
                     'post__in' => get_option("sticky_posts")
                 );

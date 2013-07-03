@@ -104,8 +104,9 @@ function twentytwelve_scripts_styles() {
 	wp_enqueue_script( 'more-expander', get_template_directory_uri() . '/js/more-expander.js', array(), '1.0', true );
 
 	wp_enqueue_script( 'jquery.cycle2', get_template_directory_uri() . '/js/jquery.cycle2.min.js', array(), '20130202', true);
-	wp_enqueue_script( 'jquery.cycle2.title', get_template_directory_uri() . '/js/jquery.cycle2.tile.min.js', array(), '20121120', true);
-	wp_enqueue_script( 'jquery.cycle2.title', get_template_directory_uri() . '/js/jquery.cycle2.scrollVert.min.js', array(), '20121120', true);
+	wp_enqueue_script( 'jquery.cycle2.tile', get_template_directory_uri() . '/js/jquery.cycle2.tile.min.js', array(), '20121120', true);
+	wp_enqueue_script( 'jquery.cycle2.scrollvert', get_template_directory_uri() . '/js/jquery.cycle2.scrollVert.min.js', array(), '20121120', true);
+
 
 	wp_enqueue_script( 'slider-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
 
