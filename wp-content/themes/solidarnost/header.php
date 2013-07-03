@@ -118,7 +118,7 @@
                          <?php endif; ?>
                          <div class="slide-content">
                             <h2 class="slide-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'magazino' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-                         	<?php //echo magazino_excerpt(25); ?>	
+                         	<?php echo solidarnost_excerpt(25); ?>	
                          </div>						
                       </div>
                     </div>
@@ -149,7 +149,7 @@
                          <?php endif; ?>
                          <div class="slide-content">
                             <h2 class="slide-title"><?php the_title(); ?></h2>
-                         	<?php //echo magazino_excerpt(25); ?>	
+                         	<?php echo solidarnost_excerpt(25); ?>	
                          </div>						
                       </div>
                     </div>
