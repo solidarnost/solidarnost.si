@@ -102,6 +102,13 @@ function twentytwelve_scripts_styles() {
 	 */
 	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
 	wp_enqueue_script( 'more-expander', get_template_directory_uri() . '/js/more-expander.js', array(), '1.0', true );
+
+	wp_enqueue_script( 'jquery.cycle2', get_template_directory_uri() . '/js/jquery.cycle2.min.js', array(), '20130202', true);
+	wp_enqueue_script( 'jquery.cycle2.title', get_template_directory_uri() . '/js/jquery.cycle2.tile.min.js', array(), '20121120', true);
+	wp_enqueue_script( 'jquery.cycle2.title', get_template_directory_uri() . '/js/jquery.cycle2.scrollVert.min.js', array(), '20121120', true);
+
+	wp_enqueue_script( 'slider-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
+
 	/*
 	 * Loads our special font CSS file.
 	 *
@@ -456,7 +463,7 @@ function my_jquery_enqueue() {
    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
    wp_enqueue_script('jquery');
    wp_deregister_script('jquery-st');
-   wp_register_script('jquery-st', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.scrollTo-min.js", false, null);
+//   wp_register_script('jquery-st', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.scrollTo-min.js", false, null);
    wp_enqueue_script('jquery-st');
 }
 
@@ -499,7 +506,7 @@ if ( ! function_exists( 'solidarnost_customizer' ) ) :
 		) );
 		
 		$wp_customize->add_setting( 'solidarnost_slider_effect', array(
-			'default' => 'scrollHorz',
+			'default' => 'scrollVert',
 			'capability' => 'edit_theme_options',
 		));
 		
@@ -509,8 +516,8 @@ if ( ! function_exists( 'solidarnost_customizer' ) ) :
 			'section' => 'solidarnost_slider_section',
 			'type' => 'select',
 			'choices' => array(
-				'scrollHorz' => 'Horizontal (Default)',
-				'scrollVert' => 'Vertical',
+				'scrollVert' => 'Vertical (Default)',
+				'scrollHorz' => 'Horizontal',
 				'tileSlide' => 'Tile Slide',
 				'tileBlind' => 'Blinds',
 			),

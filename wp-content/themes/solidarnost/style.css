@@ -692,6 +692,156 @@ section[role="banner"] {
 	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
 }
 
+
+
+
+/******************************************************************
+jQuery SLIDER STYLES
+******************************************************************/
+#load-cycle {
+	background: url(images/loading.gif) no-repeat center center;
+	width: 100%;
+	height: auto;
+	min-height: 290px;
+}
+
+#slide-wrap {
+	position: relative;
+	margin-left: -33px;
+	margin-right: -33px;
+	padding-left: 33px;
+	padding-right: 33px;
+	padding-bottom: 2em;
+}
+
+.cycle-slideshow {
+	width: 100%;
+	height: 290px;
+	overflow: hidden;
+	display: none;
+}
+
+.slides {
+	position: relative;
+	background-color: #f0f0f0;
+	width: 100%;
+	height: 290px;
+	overflow: hidden;
+}
+	.slides .slide-thumb {
+		position: relative;	
+	}
+	
+	.slides .slide-thumb img {
+		width: auto;
+		min-width: 100%;
+		height: auto;
+	}
+	
+	.slides .slide-noimg {
+		font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		position: absolute;
+		left: 30px;
+		top: 30px;
+		text-transform: uppercase;
+		color: #d0d0d0;
+	}
+	
+	.slides .slide-content {
+		position: absolute;
+		width: 60%;
+		right: 30px;
+		bottom: 30px;
+		background: url(images/trans.png);
+		padding: 15px 20px;
+		color: #fff;
+	}
+	
+	.slides .slide-title {
+		font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+		font-size: 26px;
+		font-weight: 400;
+		color: #9dbb41;
+		text-shadow: 1px 1px #000;
+		text-transform: uppercase;
+	}
+		.slides .slide-title a {
+			text-decoration: none;
+		}
+	
+#sliderprev,
+#slidernext {
+	text-align: center;
+	position: absolute;
+	top: 34%;
+	display: none;
+	text-decoration: none;
+	background-color: #2b2b2b;
+	font-size: 20px;
+	width: 67px;
+	height: 67px;
+	line-height: 67px;
+	z-index: 100;
+}
+
+	#sliderprev {
+		left: -20px;
+	}
+	
+	#slidernext {
+		right: -20px;
+	}
+
+.cycle-paused:after {
+	content: 'Paused'; 
+	font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+	text-transform: uppercase;
+	color: white; 
+	background: black; 
+	padding: 5px 10px;
+	z-index: 500; position: absolute; top: 10px; right: 10px;
+	opacity: .75; filter: alpha(opacity=75);
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; 
+	width: 100%; 
+	z-index: 500; 
+	position: absolute; 
+	top: 10px; 
+	overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; 
+	font-size: 50px; 
+	width: 16px; 
+	height: 16px; 
+    display: inline-block; 
+	color: #ccc; 
+	cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active { color: #9dbb41;}
+.cycle-pager > * { cursor: pointer;}
+
+
+
+
+.grnbar {
+	background-color: #9dbb41;
+	height: 2px;
+	overflow: hidden;
+}
+
+.colortxt {
+	color: #9dbb41;
+}
+
+
+
+
 /* Footer */
 footer[role="contentinfo"] {
 	border-top: 1px solid #ededed;
