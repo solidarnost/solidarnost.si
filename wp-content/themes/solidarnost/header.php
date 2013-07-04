@@ -130,8 +130,8 @@
                   </div>
                   
                   <div class="slidernav">
-                        <a id="sliderprev" href="#" title="<?php _e('Previous', 'magazino'); ?>"><?php _e('&#9664;', 'magazino'); ?></a>
-                        <a id="slidernext" href="#" title="<?php _e('Next', 'magazino'); ?>"><?php _e('&#9654;', 'magazino'); ?></a>
+                        <a id="sliderprev" href="#" title="<?php _e('Previous', 'magazino'); ?>"><?php _e('&#9650;', 'magazino'); ?></a>
+                        <a id="slidernext" href="#" title="<?php _e('Next', 'magazino'); ?>"><?php _e('&#9660;', 'magazino'); ?></a>
                     </div>
                     
                     <div class="clearfix"></div>
