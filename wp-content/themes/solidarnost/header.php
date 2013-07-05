@@ -33,12 +33,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-<!--		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
--->
+
 <div id="topbar"><div class="sform"><?php get_search_form(); ?></div><div class="socialbuttons">
 <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
 <img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
@@ -47,7 +42,7 @@
 </div>
 <div class="logobanner">
 <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost"></div>
-<div class="parole">"Vrnimo politiko ljudem!"</div>
+<div class="parole"><?php bloginfo( 'description' ); ?></div>
 </div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

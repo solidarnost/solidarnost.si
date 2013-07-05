@@ -628,6 +628,20 @@ a:hover {
 	font-style: italic;
 	text-align: right;
 }
+
+.parole:before,
+.parole:after {
+	font-family: Times;
+	font-weight: bold;
+	color: #c40008;	
+	quotes: "\201C" "\201D";
+}
+
+
+
+.parole:before {content:  open-quote;}
+.parole:after  {content: close-quote;}
+
 #topbar {
 	background-color: #666666;
 	text-align: right;
