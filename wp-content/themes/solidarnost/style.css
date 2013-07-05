@@ -713,7 +713,7 @@ jQuery SLIDER STYLES
 	margin-right: -33px;
 	padding-left: 33px;
 	padding-right: 33px;
-	margin-bottom: 20px; 
+	margin-bottom: 15px; 
 }
 
 .cycle-slideshow {
@@ -783,7 +783,7 @@ jQuery SLIDER STYLES
 	left:48%;
 	display: none;
 	text-decoration: none;
-	background-color: #ff0000;
+	background-color:  #c40008;
 	color: #fff;
 	font-size: 20px;
 	width: 67px;
@@ -835,7 +835,7 @@ jQuery SLIDER STYLES
 
 
 .grnbar {
-	background-color: #ff0000;
+	background-color: #c40008;
 	height: 10px;
 	overflow: hidden;
 }
