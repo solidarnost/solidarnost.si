@@ -606,15 +606,21 @@ a:hover {
     /*    padding: auto; */
         }
         .logo {
-/* //    display: inline-block;
-//    vertical-align: bottom;
-//      display:inline-block !important;
-//      height:134px;
-//        padding-right:1rem; */
-	text-align: center
-/*        //border: 1px solid red */
+	text-align: middle;
+	vertical-align: middle;
+	margin-right: 20%;
+	display: inline-block !important;
         }
-
+.logobanner {
+/*	display: inline-block !important; */
+}
+.parole {
+	display: inline-block !important;
+	vertical-align: middle;
+	font-size: 48pt;
+	font-style: italic;
+	text-align: right;
+}
 #topbar {
 	background-color: #666666;
 	text-align: right;
@@ -622,13 +628,12 @@ a:hover {
 	margin-bottom: 15px;
 	height:40px;
 	padding: 5px;
-	display: float;
 }
 .sform {
-	float: right;
+	display: inline-block !important;
 }
 .socialbuttons {
-	float: right;
+	display: inline-block !important;
 }
 /* Navigation Menu */
 .main-navigation {
@@ -1732,14 +1737,11 @@ img#wpstats {
     text-align: right;
 /*	padding:auto; */
 	}
-	.logo {
+/*	.logo {
     display: inline-block;
     vertical-align: bottom;
-/*	display:inline-block !important;
-	height:134px; */
 	padding-right:1rem;
-	/*border: 1px solid red */
-	}
+	} */
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
 /*		float:right;

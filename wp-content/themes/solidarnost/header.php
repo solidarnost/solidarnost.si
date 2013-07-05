@@ -45,7 +45,10 @@
 <img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png">
 </div>
 </div>
+<div class="logobanner">
 <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost"></div>
+<div class="parole">"Vrnimo politiko ljudem!"</div>
+</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
