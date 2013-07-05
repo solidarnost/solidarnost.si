@@ -191,6 +191,13 @@ img {
 		url('fonts/MyriadCB.ttf') format('truetype'), 
 		url('fonts/MyriadCB.woff') format('woff');
 }
+@font-face {font-family: 'Myriad-Bold';
+	src: 
+		url('fonts/MyriadCB.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MyriadCB.eot') format('embedded-opentype'),
+		url('fonts/MyriadCB.ttf') format('truetype'), 
+		url('fonts/MyriadCB.woff') format('woff');
+}
 
 
 /* =Repeatable patterns
@@ -1767,6 +1774,7 @@ img#wpstats {
 	.main-navigation li {
 		display: inline-block;
 		text-decoration: none;
+		background-color: #666666;
 	}
 	
 	.main-navigation li a {
@@ -1795,31 +1803,29 @@ img#wpstats {
 		position: absolute;
 		top: 100%;
 		z-index: 1;
+		background: #666666;
 	}
 	.main-navigation li ul ul {
 		top: 0;
 		left: 100%;
+	}
+	.main-navigation ul li ul li {
+		padding: 0 ;
+		margin: 0;
 	}
 	.main-navigation ul li:hover > ul {
 		border-left: 0;
 		display: block;
 	}
 	.main-navigation li ul li a {
-		background: #efefef;
-		border-bottom: 1px solid #ededed;
+		border-bottom: 1px solid #666666;
 		display: block;
-		font-size: 11px;
-		font-size: 0.785714286rem;
-		line-height: 2.181818182;
-		padding: 8px 10px;
-		padding: 0.571428571rem 0.714285714rem;
-		width: 180px;
-		width: 12.85714286rem;
-		white-space: normal;
+		font-size: 95%;
+		padding: 8px 0px;
+		width: 100%;
 	}
-	.main-navigation li ul li a:hover {
-		background: #e3e3e3;
-		color: #444;
+	.main-navigation li ul li:hover {
+		background: #c40008;
 	}
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current-menu-ancestor > a,
@@ -1827,6 +1833,8 @@ img#wpstats {
 	.main-navigation .current_page_ancestor > a {
 		color: white;
 	}
+	
+	
 	.menu-toggle {
 		display: none;
 	}
