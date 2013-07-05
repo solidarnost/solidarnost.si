@@ -566,8 +566,7 @@ a:hover {
 
 /* Header */
 .site-header {
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
+	padding: 0;
 }
 .site-header h1,
 .site-header h2 {
@@ -620,6 +619,8 @@ a:hover {
 .main-navigation {
 	background-color: #666666;
 	text-align: center;
+	border-bottom: 10px solid #c40008;
+	margin-bottom: 15px;
 }
 
 .main-navigation li {
@@ -1675,9 +1676,7 @@ img#wpstats {
 		float: right;
 		width: 80%;
 	}
-	.site-header {
-		margin-bottom:-30px;
-	}
+
 	.site {
 		margin: 0 auto;
 		max-width: 960px;
@@ -1752,30 +1751,18 @@ img#wpstats {
 		display: inline-block;
 		text-decoration: none;
 	}
-	.main-navigation li:after {
-	background: none repeat scroll 0 0 #0000c6;
-    	content: "";
-   	 display: inline-block;
-vertical-align:middle;
-	margin-right:0px;
-	padding-right:0px;
-/*	margin-top: -2px; */
-    	height: 41px;
-    	width: 3px;
-	}
-	.main-navigation li:last-child:after {
-	content: none;
-	}
+	
 	.main-navigation li a {
 		border-bottom: 0;
 		color: white;
-		line-height: 2.5rem;
+		line-height: 2rem;
 		text-transform: uppercase;
 		white-space: nowrap;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		padding-top: 8px;
+		padding-top: 17px;
 		vertical-align: middle;
+		font-size: 24pt
 	}
 	.main-navigation li a:hover {
 		color: white;
@@ -1822,8 +1809,6 @@ vertical-align:middle;
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
 		color: white;
-	font-family: Myriad-Bold;
-	/*	font-weight: bold; */
 	}
 	.menu-toggle {
 		display: none;
