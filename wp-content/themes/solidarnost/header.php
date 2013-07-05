@@ -39,6 +39,12 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 -->
+<div id="topbar"><div class="sform"><?php get_search_form(); ?></div><div class="socialbuttons">
+<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
+<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
+<img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png">
+</div>
+</div>
 <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost"></div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
