@@ -7,13 +7,15 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-
+<?php if (!is_home()) : ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 		<div class="featured-post">
 			<?php _e( 'Featured post', 'twentytwelve' ); ?>
 		</div>
 		<?php endif; ?>
+
+
 		<header class="entry-header">
 			<?php the_post_thumbnail(); ?>
 			<div class="cat-list">	<?php the_category(); ?></div>
@@ -77,3 +79,21 @@
 		</footer><!-- .entry-meta -->
 	</article><!-- #post -->
 			<div class="divider"></div>
+
+<?php else : ?> <!-- global article if -->
+
+<div class="post-wrap">
+<div class="post-feat">	
+<div class="post-feat-cat"><?php the_category(); ?></div>
+<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
+<div class="post-feat-content"><div class="post-feat-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></div>Text</div>
+	<?php the_excerpt(); ?>
+<div class="post-feat-more"><img src="<?php echo get_template_directory_uri(); ?>/images/more-post.png"  width="40px"/></div>
+</div>
+
+</div>
+
+
+
+
+<?php endif; ?> <!-- global article if -->
