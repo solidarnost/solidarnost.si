@@ -743,6 +743,7 @@ New stlying of posts
 	padding: 0px;
 	margin:10px;
 	display: inline-block;
+	vertical-align: top;
 }
 .post-feat {
 	position: relative;
