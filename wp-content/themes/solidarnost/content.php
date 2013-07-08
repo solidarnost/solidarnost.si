@@ -84,11 +84,17 @@
 
 <div class="post-wrap">
 <div class="post-feat">	
-<div class="post-feat-cat"><?php the_category(); ?></div>
-<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-<div class="post-feat-content"><div class="post-feat-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></div>Text</div>
-	<?php the_excerpt(); ?>
-<div class="post-feat-more"><img src="<?php echo get_template_directory_uri(); ?>/images/more-post.png"  width="40px"/></div>
+<div class="post-feat-cat"><?php $category = get_the_category(); 
+echo "<a href='".get_category_link( $category[0]->term_id )."' title='". esc_attr( sprintf( __( "View all posts in %s" ), $category[0]->name ) ) . "'>".$category[0]->cat_name ."</a>"; ?></div>
+<?php if (has_post_thumbnail()) : ?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
+<?php else : ?>
+<div class="post-feat-nothumb"></div>
+<?php endif; ?>
+<div class="post-feat-content"><div class="post-feat-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></div><?php echo get_post_meta(get_the_ID(), "podnaslov", true); ?></div>
+<div class="post-feat-excerpt"><?php the_excerpt(); ?></div>
+<div class="post-feat-more"><a href="<?php the_permalink(); ?>" rel="bookmark"><img src="<?php echo get_template_directory_uri(); ?>/images/more-post.png"  width="40px"/></a></div>
+
 </div>
 
 </div>
