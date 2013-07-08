@@ -59,6 +59,7 @@
 
 <?php 
 /* SAMO: Tukaj vrinem notri slider (carousel). Povzeto po temi Magazino. */
+ if (is_home()) :
 ?>
 
         <div id="slide-wrap">
@@ -167,4 +168,4 @@
                     
               </div>
 <div class="grnbar"></div>
-
+<?php endif; // is_home ?>
