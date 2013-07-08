@@ -17,7 +17,7 @@
 
 
 		<header class="entry-header">
-			<?php the_post_thumbnail(); ?>
+<!--			<?php the_post_thumbnail(); ?> -->
 			<div class="cat-list">	<?php the_category(); ?></div>
 			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
