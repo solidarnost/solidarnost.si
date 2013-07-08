@@ -18,7 +18,9 @@
 
 		<header class="entry-header">
 <!--			<?php the_post_thumbnail(); ?> -->
+	
 			<div class="cat-list">	<?php the_category(); ?></div>
+			<div class="date-published"><?php the_time('j. F Y'); ?></div>
 			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
@@ -26,7 +28,6 @@
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 			<?php endif; // is_single() ?>
-			<?php the_time('j. F Y'); ?>
 			<?php if ( comments_open() && 0) : ?>
 				<div class="comments-link">
 					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
@@ -78,11 +79,10 @@
 			<?php endif; ?>
 		</footer><!-- .entry-meta -->
 	</article><!-- #post -->
-			<div class="divider"></div>
 
 <?php else : ?> <!-- global article if -->
 
-<div class="post-wrap">
+<div class="post-feat-wrap">
 <div class="post-feat">	
 <div class="post-feat-cat"><?php $category = get_the_category(); 
 echo "<a href='".get_category_link( $category[0]->term_id )."' title='". esc_attr( sprintf( __( "View all posts in %s" ), $category[0]->name ) ) . "'>".$category[0]->cat_name ."</a>"; ?></div>
