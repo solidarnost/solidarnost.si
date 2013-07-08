@@ -1319,6 +1319,7 @@ img.aligncenter {
 	background-color:  #c40008;
 	color: #fff;
 	font-size: 11pt;
+	width: auto;
 	max-width: 40%;
 	z-index: 100;
 
@@ -1368,7 +1369,7 @@ img.aligncenter {
 	border-left: 5px solid #c40008;
 	border-top: 5px solid #c40008;
 	box-shadow: 1px 1px 5px #888888;
-
+	margin-bottom: 25px;
 }
 .page-links {
 	clear: both;
