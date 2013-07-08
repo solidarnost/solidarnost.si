@@ -49,7 +49,7 @@
 				$more=0;
 				?>
 			<?php else : ?>
-				<?php the_content('več <img class="img-none" align="center" src="'.get_template_directory_uri().'/images/next.png" border=0 width="25">', 'twentytwelve'  ); ?>
+				<?php the_content('več <img class="img-none" align="center" src="'.get_template_directory_uri().'/images/more.png" border=0 width="15">', 'twentytwelve'  ); ?>
 
 			<?php endif; ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
@@ -63,8 +63,8 @@
 				$more=0;
 
 			?>
-			<div class="more-link" onclick="collapse(<?php the_ID(); ?>)">manj 
-			<img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/cross.png" width="20"></div>
+			<div class="more-link" onclick="collapse(<?php the_ID(); ?>)">manj
+			<img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/less.png" width="15"></div>
 		</div><!-- .entry-hidden -->
 		<?php endif; ?>
 

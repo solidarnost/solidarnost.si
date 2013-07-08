@@ -471,7 +471,7 @@ function my_jquery_enqueue() {
 function wdc_no_more_jumping($link) {
 	global $post;
 //     return '<a href="'.get_permalink($post->ID).'" class="read-more">'.'Continue Reading'.'</a>';
-	return '<div class="more-link" id="button-entry-more-'.$post->ID.'" onclick="expand('.$post->ID.')">več <img class="img-none" src="'.get_template_directory_uri().'/images/next.png" width="25"></div>';
+	return '<div class="more-link" id="button-entry-more-'.$post->ID.'" onclick="expand('.$post->ID.')">več <img class="img-none" src="'.get_template_directory_uri().'/images/more.png" width="15"></div>';
 }
 add_filter('the_content_more_link', 'wdc_no_more_jumping');
 
