@@ -8,7 +8,7 @@
  * anything you'd like -- followed by front-page-only widgets in one or two columns.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Solidarnost_si
  * @since Twenty Twelve 1.0
  */
 

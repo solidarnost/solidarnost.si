@@ -5,7 +5,7 @@
  * If no active widgets in either sidebar, they will be hidden completely.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Solidarnost_si
  * @since Twenty Twelve 1.0
  */
 

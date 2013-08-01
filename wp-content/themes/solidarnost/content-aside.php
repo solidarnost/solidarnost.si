@@ -3,7 +3,7 @@
  * The template for displaying posts in the Aside post format
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Solidarnost_si
  * @since Twenty Twelve 1.0
  */
 ?>

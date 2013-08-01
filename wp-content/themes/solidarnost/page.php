@@ -8,7 +8,7 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Solidarnost_si
  * @since Twenty Twelve 1.0
  */
 

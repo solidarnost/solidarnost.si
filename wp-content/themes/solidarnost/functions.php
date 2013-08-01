@@ -18,7 +18,7 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Solidarnost_si
  * @since Twenty Twelve 1.0
  */
 
