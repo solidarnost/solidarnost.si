@@ -36,7 +36,7 @@
 
 <div id="topbar"><div class="sform"><?php get_search_form(); ?></div><div class="socialbuttons">
 <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
-<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
+<a href="https://twitter.com/Solidarnost_si"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" border=0></a>
 <img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png">
 </div>
 </div>
