@@ -233,6 +233,7 @@ textarea {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	font-family: inherit;
+	font-size: 16px;
 	padding: 6px;
 	padding: 0.428571429rem;
 }
