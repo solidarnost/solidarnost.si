@@ -73,8 +73,15 @@
               ?>
     
                 <?php if ( $fPosts->have_posts() ) : ?>
-                  
-                  <?php if ($countPosts > 1) : ?>
+<?php                   
+		$pstcnt=0;
+		while ( $fPosts->have_posts() ) : 
+					$fPosts->the_post();
+					if(has_tag("slider")) $pstcnt++;
+		endwhile;
+	?>	
+
+                  <?php if ($countPosts > 1 && $pstcnt>0) : ?>
                   <div id="load-cycle"></div>
                   <div class="cycle-slideshow" <?php 
 				  	if ( get_theme_mod('solidarnost_slider_effect') ) {
@@ -99,7 +106,10 @@
                     <?php endif; ?>
                     <?php /* Start the Loop */ ?>
                     <?php while ( $fPosts->have_posts() ) : $fPosts->the_post(); ?>
-                    
+                   	<?php
+				// Verify if the post is tagged for carousel 
+				if(has_tag("slider")){
+			?>
                     <div class="slides">
                       <div id="post-<?php the_ID(); ?>" <?php post_class('post-theme'); ?>>
                          <?php if ( has_post_thumbnail()) : ?>
@@ -126,6 +136,7 @@
                          </div>						
                       </div>
                     </div>
+                  <?php } /* End if has tag */?>  
                     
                     <?php endwhile; ?>
 
@@ -139,12 +150,13 @@
                     </div>
                     
                     <div class="clearfix"></div>
-                  
                   <?php else : ?>
                   
                   <?php /* Start the Loop */ ?>
+		<?php if($pstcnt>0) { ?>
                    <?php while ( $fPosts->have_posts() ) : $fPosts->the_post(); ?>
-                  	<div class="slides">
+	
+			<div class="slides">
                       <div id="post-<?php the_ID(); ?>" <?php post_class('post-theme'); ?>>
                          <?php if ( has_post_thumbnail()) : ?>
                             <div class="slide-thumb"><?php the_post_thumbnail( array(1000, 640) ); ?></div>
@@ -160,11 +172,14 @@
                     <?php endwhile; ?>
 
                     <?php wp_reset_postdata(); // reset the query ?>
+                  <?php } /* End if pstcnt!!! */?>  
                   
                   <?php endif; ?>
                   
                 <?php endif; ?>
                     
               </div>
+<?php if($pstcnt>0) { ?>
 <div class="grnbar"></div>
+<?php } ?>
 <?php endif; // is_home ?>
