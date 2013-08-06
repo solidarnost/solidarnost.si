@@ -1943,7 +1943,8 @@ img#wpstats {
 		padding: 0;
 		position: absolute;
 		top: 100%;
-		z-index: 1;
+		text-align: left;
+		z-index: 100000;
 		background: #666666;
 	}
 	.main-navigation li ul ul {
@@ -1953,18 +1954,29 @@ img#wpstats {
 	.main-navigation ul li ul li {
 		padding: 0 ;
 		margin: 0;
+		width: 100%;
 	}
 	.main-navigation ul li:hover > ul {
 		border-left: 0;
 		display: block;
+		border-top: 10px solid #c40008;
+		border-bottom: 10px solid #c40008;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		min-width: 100%;
 	}
 	.main-navigation li ul li a {
-		border-bottom: 1px solid #666666;
 		display: block;
-		font-size: 95%;
 		padding: 8px 0px;
-		width: 100%;
-	}
+		margin-top: 2px;
+		margin-bottom: 2px;
+		border-bottom: 0;
+		color: white;
+		text-transform: uppercase;
+		white-space: nowrap;
+		font-size: 15pt;
+		text-indent:10px;
+}
 	.main-navigation li ul li:hover {
 		background: #c40008;
 	}
