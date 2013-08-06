@@ -35,9 +35,8 @@
 <div id="page" class="hfeed site">
 
 <div id="topbar"><div class="sform"><?php get_search_form(); ?></div><div class="socialbuttons">
-<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
+<a href="http://www.facebook.com/solidarnost.si"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" border=0></a>
 <a href="https://twitter.com/Solidarnost_si"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" border=0></a>
-<img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png">
 </div>
 </div>
 <div class="logobanner">
