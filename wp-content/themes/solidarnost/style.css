@@ -662,7 +662,7 @@ a:hover {
 .main-navigation {
 	background-color: #666666;
 	text-align: center;
-	border-bottom: 10px solid #c40008;
+	border-bottom: 5px solid #c40008;
 	margin-bottom: 15px;
 }
 
@@ -985,7 +985,7 @@ jQuery SLIDER STYLES
 
 .grnbar {
 	background-color: #c40008;
-	height: 10px;
+	height: 5px;
 	overflow: hidden;
 }
 
@@ -1993,21 +1993,23 @@ img#wpstats {
 		padding: 0 ;
 		margin: 0;
 		width: 100%;
+		padding-right: 10px;
 	}
 	.main-navigation ul li:hover > ul {
 		border-left: 0;
 		display: block;
-		border-top: 10px solid #c40008;
-		border-bottom: 10px solid #c40008;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		min-width: 100%;
+		border-top: 5px solid #c40008;
+		border-bottom: 5px solid #c40008;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		min-width: 110%;
+		padding-right: 10px;
 	}
 	.main-navigation li ul li a {
 		display: block;
-		padding: 8px 0px;
-		margin-top: 2px;
-		margin-bottom: 2px;
+		padding: 2px 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 		border-bottom: 0;
 		color: white;
 		text-transform: uppercase;
@@ -2019,10 +2021,13 @@ img#wpstats {
 		background: #c40008;
 	}
 	.main-navigation .current-menu-item > a,
-	.main-navigation .current-menu-ancestor > a,
-	.main-navigation .current_page_item > a,
-	.main-navigation .current_page_ancestor > a {
+	.main-navigation .current_page_item > a {
 		color: white;
+		border-left: 5px solid #c40008;
+
+	}
+	.main-navigation .current-menu-ancestor > a,
+	.main-navigation .current_page_ancestor > a {
 		background: #c40008;
 	}
 	
