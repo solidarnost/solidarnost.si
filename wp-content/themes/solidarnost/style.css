@@ -616,14 +616,14 @@ a:hover {
         .logo {
 	text-align: middle;
 	vertical-align: middle;
-	margin-right: 20%;
+	max-width:360px;
 	display: inline-block !important;
         }
 .logobanner {
-/*	display: inline-block !important; */
+	display: inline; 
 }
 .parole {
-	display: inline-block !important;
+	margin-left:10%;
 	vertical-align: middle;
 	font-size: 48pt;
 	font-style: italic;

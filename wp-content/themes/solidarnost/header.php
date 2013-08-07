@@ -40,8 +40,8 @@
 </div>
 </div>
 <div class="logobanner">
-<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost"></div>
-<div class="parole"><?php bloginfo( 'description' ); ?></div>
+<img class="logo" src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost">
+<span class="parole"><?php bloginfo( 'description' ); ?></span>
 </div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
