@@ -653,6 +653,7 @@ a:hover {
 }
 .sform {
 	display: inline-block !important;
+	vertical-align: top;
 }
 .socialbuttons {
 	display: inline-block !important;
@@ -747,6 +748,7 @@ Glej .site-content article !!!
 
 .post-feat-wrap {
 	max-width: 290px;
+	width:290px;
 	padding: 0px;
 	margin:10px;
 	display: inline-block;

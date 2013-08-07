@@ -565,14 +565,22 @@ endif;
 
 /* SAMO: searchform styling and functionality */
 /* gotten from: http://codex.wordpress.org/Function_Reference/get_search_form */
-
+/* very important in 3.6 wordpress */
 function my_search_form( $form ) {
+/*
     $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
     <div><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
     <input type="text" value="' . get_search_query() . '" name="s" id="s" />
     <input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
     </div>
     </form>';
+*/
+$form='<form action="'.home_url( '/' ).'" method="get">
+    <fieldset>
+        <input type="image" alt="Search" src="'.get_template_directory_uri().'/images/search.png" />
+        <input type="text" name="s" id="search" style="vertical-align: top" size=40 value="'.get_search_query().'" />
+    </fieldset>
+</form>';
 
     return $form;
 }
