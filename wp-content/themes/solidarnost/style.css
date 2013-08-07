@@ -1367,13 +1367,15 @@ img.aligncenter {
 .social-media:hover .list{
 	display: inline;
 	position: absolute;
-	top:20px;
-	right:0px;
+	top:00px;
+	right:00px;
 	color: #c40008;
+	background-color: #fff;
 	max-width:200px;
 	width: 120px;
 	padding: 20px 10px 20px 10px;
-	border: 2pt solid #c40008;
+	border-left: 1pt solid #c40008;
+	border-bottom: 1pt solid #c40008;
 }
 
 

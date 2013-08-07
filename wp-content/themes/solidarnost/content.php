@@ -21,7 +21,6 @@
 	
 			<div class="cat-list">	<?php the_category(); ?></div>
 			<div class="date-published"><?php the_time('j. F Y'); ?></div>
-			<?php if ( is_single() ) : ?>
 			<div class="social-media">
 				<div class="list"><!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style" addthis:url="<?php the_permalink();?>" addthis:title="<?php the_title(); ?>" addthis:description="<?php the_excerpt(); ?>">
@@ -35,6 +34,7 @@
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5202956113357715"></script>
 					<!-- AddThis Button END --></div>
 			Deli naprej</div>
+			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
 			<h1 class="entry-title">
