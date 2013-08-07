@@ -22,6 +22,19 @@
 			<div class="cat-list">	<?php the_category(); ?></div>
 			<div class="date-published"><?php the_time('j. F Y'); ?></div>
 			<?php if ( is_single() ) : ?>
+			<div class="social-media">
+				<div class="list"><!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style" addthis:url="<?php the_permalink();?>" addthis:title="<?php the_title(); ?>" addthis:description="<?php the_excerpt(); ?>">
+					<a class="addthis_button_facebook"></a>
+					<a class="addthis_button_twitter"></a>
+					<a class="addthis_button_google"></a>
+					<a class="addthis_button_google_plusone_share"></a>
+					<a class="addthis_button_email"></a>
+					<a class="addthis_button_print"></a>
+					</div>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5202956113357715"></script>
+					<!-- AddThis Button END --></div>
+			Deli naprej</div>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
 			<h1 class="entry-title">
