@@ -755,7 +755,7 @@ Glej .site-content article !!!
 	max-width: 290px;
 	width:290px;
 	padding: 0px;
-	margin:9px;
+	margin:7px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -1896,7 +1896,7 @@ img#wpstats {
 	}
 	.site-content {
 		float: left;
-		width: 65.104166667%;
+		width: 73%;
 	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,
