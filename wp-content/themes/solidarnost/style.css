@@ -618,14 +618,17 @@ a:hover {
         .logo {
 	text-align: middle;
 	vertical-align: middle;
-	max-width:360px;
-	display: inline-block !important;
+	max-width:35%;
+/*	display: inline-block !important; */
         }
 .logobanner {
-	display: inline; 
+	position: relative;
 }
 .parole {
-	margin-left:10%;
+	position:absolute;
+	max-width:60%;	
+/*	margin-left:10%; */
+	right:0px;
 	vertical-align: middle;
 	font-size: 48pt;
 	font-style: italic;
