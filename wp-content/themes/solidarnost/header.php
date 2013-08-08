@@ -40,7 +40,8 @@
 </div>
 </div>
 <div class="logobanner">
-<img class="logo" src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost">
+<!--<img class="logo" src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost"> -->
+<img class="logo" src="<?php echo wp_kses_post( get_theme_mod('solidarnost_logo') ); ?>" alt="Logotip stranke Solidarnost">
 <span class="parole"><?php bloginfo( 'description' ); ?></span>
 </div>
 

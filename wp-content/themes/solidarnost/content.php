@@ -29,7 +29,7 @@
 					<a class="addthis_button_google"></a>
 					<a class="addthis_button_google_plusone_share"></a>
 					<a class="addthis_button_email"></a>
-					<a class="addthis_button_print"></a>
+					<a href="<?php the_permalink();?>" class="addthis_button_print" ></a>
 					</div>
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5202956113357715"></script>
 					<!-- AddThis Button END --></div>
