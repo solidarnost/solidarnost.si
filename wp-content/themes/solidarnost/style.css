@@ -104,6 +104,8 @@ html {
 a:focus {
 	outline: thin dotted;
 }
+
+
 article,
 aside,
 details,
@@ -528,7 +530,7 @@ body.custom-font-enabled {
 }
 a {
 	outline: none;
-	color: #21759b;
+	color: #c40008;
 }
 a:hover {
 	color: #0f3647;
