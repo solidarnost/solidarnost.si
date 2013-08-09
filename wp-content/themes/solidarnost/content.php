@@ -105,9 +105,11 @@
 
 <?php else : ?> <!-- global article if -->
 
-<?php
-if(has_tag("izpostavljeno")){
-?>
+
+
+
+
+
 <div class="post-feat-wrap">
 <div class="post-feat">	
 <div class="post-feat-cat"><?php $category = get_the_category(); 
@@ -126,6 +128,5 @@ echo "<a href='".get_category_link( $category[0]->term_id )."' title='". esc_att
 </div>
 
 
-<?php } ?> <!-- has tag if -->
 
 <?php endif; ?> <!-- global article if -->

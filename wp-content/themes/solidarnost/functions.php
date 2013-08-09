@@ -587,3 +587,14 @@ $form='<form action="'.home_url( '/' ).'" method="get">
 
 add_filter( 'get_search_form', 'my_search_form' );
 
+
+
+
+/* SAMO: this changes main loop functionality on main page */
+function main_page_loop( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'tag', 'izpostavljeno' );
+	$query->set( 'posts_per_page',8);
+    }
+}
+add_action( 'pre_get_posts', 'main_page_loop' );
