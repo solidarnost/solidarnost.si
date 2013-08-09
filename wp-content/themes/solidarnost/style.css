@@ -2243,4 +2243,45 @@ border-radius: 0;
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+
+	.social-media {
+		display: none;
+	}
+	.social-media .list {
+		display: none;
+	}
+	.logobanner{
+		display: block;
+		border-top: 10px solid #c40008;
+		padding-top: 20px;
+		padding-bottom:20px;
+	}
+	.logo{
+		max-height:60px;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.parole{
+		display: none;
+	}
+	#topbar{
+		display: none;
+	}
+	.cat-list{
+		background-color:  #c40008;
+		max-width: 15%;
+		font-size:12pt;
+	}
+	.date-published{
+		right:0px;
+		font-size:12pt;
+	}
+	.site-content article{
+		border: none;
+		border: none;
+		border: none;
+		box-shadow: none;
+		max-width: none;
+	}
 }
