@@ -2274,6 +2274,11 @@ border-radius: 0;
 		background: none;
 		max-width: 15%;
 		font-size:12pt;
+
+		text-align:left;
+		top: 10px;
+		left: 25px;
+		position: absolute;
 	}
 	.cat-list a {
 		color:  #c40008;
@@ -2281,6 +2286,10 @@ border-radius: 0;
 	.date-published{
 		right:0px;
 		font-size:12pt;
+
+		top: 15px;
+		right: 30px;
+		position:absolute;
 	}
 	.site-content article{
 		border: none;
