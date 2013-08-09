@@ -104,6 +104,9 @@
                     
                     <div class="slides">
                       <div id="post-<?php the_ID(); ?>" <?php post_class('post-theme'); ?>>
+
+<?php $category = get_the_category(); ?>
+
                          <?php if ( has_post_thumbnail()) : ?>
                             <div class="slide-thumb"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'magazino' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( array(1000, 640), array( 'style' => 'position:absolute', 'onload' => 'feat_img_onload(this)' ) ); ?></a></div>
                          <?php else : ?>
@@ -115,6 +118,15 @@
                             ?>
                             <div class="slide-thumb"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'magazino' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php echo $my_image; ?></a></div>
                             
+<?php elseif($category[0]->slug=="v-medijih") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Mediji_960x490.jpg"></a></div>
+<?php elseif($category[0]->slug=="sporocila-za-javnost") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Sporocila_za_javnost_960x490.jpg"></a></div>
+<?php elseif($category[0]->slug=="dogodki") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Dogodki_960x490.jpg"></a></div>
+<?php elseif($category[0]->slug=="blog") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Blog_960x490.jpg"></a></div>
+
                             <?php else : ?>
                          	
                             <div class="slide-noimg"><?php _e('No featured image set for this post.', 'magazino') ?></div>

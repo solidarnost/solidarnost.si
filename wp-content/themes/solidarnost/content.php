@@ -116,6 +116,14 @@
 echo "<a href='".get_category_link( $category[0]->term_id )."' title='". esc_attr( sprintf( __( "View all posts in %s" ), $category[0]->name ) ) . "'>".$category[0]->cat_name ."</a>"; ?></div>
 <?php if (has_post_thumbnail()) : ?>
 <div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
+<?php elseif($category[0]->slug=="v-medijih") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Mediji_290x218.jpg"></a></div>
+<?php elseif($category[0]->slug=="sporocila-za-javnost") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Sporocila_za_javnost_290x218.jpg"></a></div>
+<?php elseif($category[0]->slug=="dogodki") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Dogodki_290x218.jpg"></a></div>
+<?php elseif($category[0]->slug=="blog") :?>
+<div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><img class="img-none" src="<?php echo get_template_directory_uri(); ?>/images/Blog_290x218.jpg"></a></div>
 <?php else : ?>
 <div class="post-feat-nothumb"></div>
 <?php endif; ?>
