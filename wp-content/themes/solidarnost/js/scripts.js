@@ -48,7 +48,7 @@ function feat_img_onload(hlimg) {
 
   var t = new Image(); t.src = hlimg.src; hlimg.width = t.width; hlimg.height = t.height;
 
-  var result = ScaleImage(hlimg.width, hlimg.height, 1000, 300, false);
+  var result = ScaleImage(hlimg.width, hlimg.height, 960, 490, false);
   hlimg.width      = result.width;
   hlimg.height     = result.height;
   hlimg.style.left = result.targetleft + "px";
