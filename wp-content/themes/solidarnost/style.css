@@ -2299,6 +2299,10 @@ border-radius: 0;
 		max-width: none;
 	}
 
+	.entry-content p {
+		font-size: 12pt;
+		line-height: 1.2;	
+	}
 	#catapult-cookie-bar{
 		display: none;
 	}
