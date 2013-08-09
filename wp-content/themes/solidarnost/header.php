@@ -182,5 +182,10 @@
               </div>
 <?php if($pstcnt>0) { ?>
 <div class="grnbar"></div>
-<?php } ?>
+<?php } 
+
+/* change some settings for the loop for the main entry page */
+query_posts('posts_per_page=6');
+
+?>
 <?php endif; // is_home ?>
