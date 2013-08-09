@@ -57,6 +57,26 @@ function feat_img_onload(hlimg) {
 }
 
 
+
+
+function resizeFont(){
+//Standard height, for which the body font size is correct
+var preferredWidth = 960;  
+
+var displayWidth = $(window).width();
+if(displayWidth<960){
+var percentage = displayWidth / preferredWidth;
+var newFontSize = Math.floor(64 * percentage) - 1;
+$(".parole").css("font-size", newFontSize);
+}else
+{
+$(".parole").css("font-size", 64);
+}
+
+}
+
+
+
 jQuery(document).ready(function($){
 	
 	/* prepend menu icon */
@@ -100,5 +120,14 @@ jQuery(document).ready(function($){
 	$(".post-box").bind("mouseleave", function() {
 		$(this).find("img").fadeIn(400);
 	});
+
+/* SAMO: Resize font for parole */
+    $(window).bind('resize', function()
+    {
+        resizeFont();
+        }).trigger('resize');
+
+
+
 
 });

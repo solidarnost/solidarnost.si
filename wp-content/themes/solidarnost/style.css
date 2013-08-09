@@ -630,7 +630,8 @@ a:hover {
 /*	margin-left:10%; */
 	right:0px;
 	vertical-align: middle;
-	font-size: 48pt;
+/* careful if changing font size! Look into js/script.js for resizing it */
+	font-size: 64px;
 	font-style: italic;
 	text-align: right;
 }
