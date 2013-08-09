@@ -75,6 +75,15 @@ $(".parole").css("font-size", 64);
 
 }
 
+function resizeCarousel(){
+
+var ratio=490/960;
+var width= $(".cycle-slideshow").width();
+$(".cycle-slideshow").css("height",ratio*width );
+$(".slides").css("height",ratio*width );
+//$(".slide-title").css("bottom","10%" );
+}
+
 
 
 jQuery(document).ready(function($){
@@ -125,6 +134,7 @@ jQuery(document).ready(function($){
     $(window).bind('resize', function()
     {
         resizeFont();
+	resizeCarousel();
         }).trigger('resize');
 
 

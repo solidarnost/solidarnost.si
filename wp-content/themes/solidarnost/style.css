@@ -911,7 +911,7 @@ jQuery SLIDER STYLES
 		height: auto;
 		max-height: 350px;
 		left: 0px;
-		bottom: 30px;
+		bottom: 10%;
 		background: url(images/trans.png);
 		padding: 15px 20px;
 		color: #fff;
