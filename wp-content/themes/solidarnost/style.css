@@ -1411,7 +1411,7 @@ img.aligncenter {
 .site-content article {
 	background-color: #fffff; 
 /* margine nastavimo v dividerju */
-	max-width: 613px;
+/*	max-width: 613px; */
 	padding: 24px;
 	margin:0px;
 	vertical-align: top;
