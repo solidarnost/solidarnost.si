@@ -85,6 +85,22 @@ $(".slides").css("height",ratio*width );
 }
 
 
+function resizeMenuText(){
+//Standard height, for which the body font size is correct
+var preferredWidth = 960;  
+
+var displayWidth = $(window).width();
+if(displayWidth<960){
+var percentage = displayWidth / preferredWidth;
+var newFontSize = Math.floor(32 * percentage) - 1;
+$(".main-navigation li a").css("font-size", newFontSize);
+}else
+{
+$(".main-navigation li a").css("font-size", 32);
+}
+
+}
+
 
 jQuery(document).ready(function($){
 	
@@ -135,6 +151,7 @@ jQuery(document).ready(function($){
     {
         resizeFont();
 	resizeCarousel();
+	resizeMenuText();
         }).trigger('resize');
 
 
