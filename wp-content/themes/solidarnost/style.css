@@ -1024,7 +1024,12 @@ footer[role="contentinfo"] a {
 footer[role="contentinfo"] a:hover {
 	color: #21759b;
 }
-
+.site-info{
+	vertical-align: middle;
+}
+.site-info img{
+	vertical-align: middle;
+}	
 
 /* =Main content and comment content
 -------------------------------------------------------------- */
@@ -1877,6 +1882,8 @@ img#wpstats {
 /* =Media queries
 -------------------------------------------------------------- */
 
+
+
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
 	.author-avatar {
@@ -1990,6 +1997,12 @@ img#wpstats {
 		text-align: left;
 		z-index: 100000;
 		background: #666666;
+/*
+		-webkit-box-shadow: 5px 5px 13px rgba(196, 0, 82, 0.38);
+		-moz-box-shadow:    5px 5px 13px rgba(196, 0, 82, 0.38);
+		box-shadow:         5px 5px 13px rgba(196, 0, 82, 0.38);
+*/
+
 	}
 	.main-navigation li ul ul {
 		top: 0;
@@ -2099,8 +2112,8 @@ img#wpstats {
 		padding: 0 2.857142857rem;
 	/*	margin-top: 48px;
 		margin-top: 3.428571429rem; */
-		margin-bottom: 48px;
-		margin-bottom: 3.428571429rem;
+/*		margin-bottom: 48px;
+		margin-bottom: 3.428571429rem; */
 		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 	}
 	body.custom-background-empty {
@@ -2122,6 +2135,8 @@ img#wpstats {
 	background-color: #fff;
 	}
 }
+
+
 
 
 /* =Print
