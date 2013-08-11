@@ -1883,65 +1883,8 @@ img#wpstats {
 /* =Media queries
 -------------------------------------------------------------- */
 
+@media screen and (min-width: 240px){
 
-
-/* Minimum width of 600 pixels. */
-@media screen and (min-width: 300px) {
-	.author-avatar {
-		float: left;
-		margin-top: 8px;
-		margin-top: 0.571428571rem;
-	}
-	.author-description {
-		float: right;
-		width: 80%;
-	}
-
-	.site {
-		margin: 0 auto;
-		max-width: 960px;
-		max-width: 68.571428571rem;
-		overflow: hidden;
-	}
-	.site-content {
-		float: left;
-		width: 73%;
-	}
-	body.template-front-page .site-content,
-	body.single-attachment .site-content,
-	body.full-width .site-content {
-		width: 100%;
-	}
-	.widget-area {
-		float: right;
-		width: 26.041666667%;
-	}
-
-
-	.site-header h1,
-	.site-header h2 {
-		text-align: left;
-		display: none;
-	}
-	.site-header h1 {
-		font-size: 26px;
-		font-size: 1.857142857rem;
-		line-height: 1.846153846;
-		margin-bottom: 0;
-	}
-	.site-header {
-		padding-top: 0;
-	}
-	.twodiv {
-    display: inline-block;
-    text-align: right;
-/*	padding:auto; */
-	}
-/*	.logo {
-    display: inline-block;
-    vertical-align: bottom;
-	padding-right:1rem;
-	} */
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
 /*		float:right;
@@ -2045,6 +1988,66 @@ img#wpstats {
 	.menu-toggle {
 		display: none;
 	}
+
+}
+
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 600px) {
+	.author-avatar {
+		float: left;
+		margin-top: 8px;
+		margin-top: 0.571428571rem;
+	}
+	.author-description {
+		float: right;
+		width: 80%;
+	}
+
+	.site {
+		margin: 0 auto;
+		max-width: 960px;
+		max-width: 68.571428571rem;
+		overflow: hidden;
+	}
+	.site-content {
+		float: left;
+		width: 73%;
+	}
+	body.template-front-page .site-content,
+	body.single-attachment .site-content,
+	body.full-width .site-content {
+		width: 100%;
+	}
+	.widget-area {
+		float: right;
+		width: 26.041666667%;
+	}
+
+
+	.site-header h1,
+	.site-header h2 {
+		text-align: left;
+		display: none;
+	}
+	.site-header h1 {
+		font-size: 26px;
+		font-size: 1.857142857rem;
+		line-height: 1.846153846;
+		margin-bottom: 0;
+	}
+	.site-header {
+		padding-top: 0;
+	}
+	.twodiv {
+    display: inline-block;
+    text-align: right;
+/*	padding:auto; */
+	}
+/*	.logo {
+    display: inline-block;
+    vertical-align: bottom;
+	padding-right:1rem;
+	} */
 	.entry-header .entry-title {
 		font-size: 22px;
 		font-size: 1.571428571rem;
