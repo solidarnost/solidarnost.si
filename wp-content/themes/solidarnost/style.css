@@ -1884,6 +1884,12 @@ img#wpstats {
 -------------------------------------------------------------- */
 
 @media screen and (min-width: 240px){
+	.social-media{
+		margin-left:95%;
+	}
+	.social-media-text{
+	display: none;
+	}
 
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
@@ -2101,6 +2107,20 @@ img#wpstats {
 
 /* Minimum width of 960 pixels. */
 @media screen and (min-width: 960px) {
+
+	.social-media{
+		margin-left:90%;
+	}
+	.social-media-text{
+	display: inherit;
+	}
+	.social-media-icon{
+	display: none;
+	width:100%;
+	}
+
+
+
 	body {
 		background-color: #e6e6e6;
 	}

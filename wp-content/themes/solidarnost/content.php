@@ -33,7 +33,10 @@
 					</div>
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5202956113357715"></script>
 					<!-- AddThis Button END --></div>
-			Deli naprej</div>
+			<div class="social-media-text">Deli naprej</div>
+			<div class="social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/share.png" width=100%></div>
+
+	</div>
 			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
