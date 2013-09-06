@@ -37,6 +37,8 @@
 <div id="topbar"><div class="sform"><?php get_search_form(); ?></div><div class="socialbuttons">
 <a href="http://www.facebook.com/solidarnost.si"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" border=0></a>
 <a href="https://twitter.com/Solidarnost_si"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" border=0></a>
+<a href="https://plus.google.com/u/0/114536084345311776923/posts"><img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png" border=0></a>
+<a href="http://www.youtube.com/channel/UC3RDdAGuR0hyWDRfjtVu_4w"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png" border=0></a>
 </div>
 </div>
 <div class="logobanner">
