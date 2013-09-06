@@ -41,14 +41,14 @@
 </div>
 <div class="logobanner">
 <!--<img class="logo" src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logotip stranke Solidarnost"> -->
-<img class="logo" src="<?php echo wp_kses_post( get_theme_mod('solidarnost_logo') ); ?>" alt="Logotip stranke Solidarnost">
+	<a href="<?php echo esc_url( home_url( '' ) ); ?>"><img class="logo" src="<?php echo wp_kses_post( get_theme_mod('solidarnost_logo') ); ?>" alt="Logotip stranke Solidarnost"></a>
 <span class="parole"><?php bloginfo( 'description' ); ?></span>
 </div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-		
+	<header>	
 		<?php $header_image = get_header_image();
 		if ( ! empty( $header_image ) ) : ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
