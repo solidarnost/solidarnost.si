@@ -185,22 +185,37 @@ img {
 		url('fonts/MyriadC.eot') format('embedded-opentype'),
 		url('fonts/MyriadC.ttf') format('truetype'), 
 		url('fonts/MyriadC.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
-@font-face {font-family: 'Myriad-Bold';
+@font-face {font-family: 'Myriad-Condensed';
 	src: 
 		url('fonts/MyriadCB.eot?#iefix') format('embedded-opentype'),
 		url('fonts/MyriadCB.eot') format('embedded-opentype'),
 		url('fonts/MyriadCB.ttf') format('truetype'), 
 		url('fonts/MyriadCB.woff') format('woff');
-}
-@font-face {font-family: 'Myriad-Bold';
-	src: 
-		url('fonts/MyriadCB.eot?#iefix') format('embedded-opentype'),
-		url('fonts/MyriadCB.eot') format('embedded-opentype'),
-		url('fonts/MyriadCB.ttf') format('truetype'), 
-		url('fonts/MyriadCB.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
 }
 
+@font-face {font-family: 'Myriad-Condensed';
+	src: 
+		url('fonts/MyriadCI.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MyriadCI.eot') format('embedded-opentype'),
+		url('fonts/MyriadCI.ttf') format('truetype'), 
+		url('fonts/MyriadCI.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+/*
+@font-face {font-family: 'Myriad-Bold';
+	src: 
+		url('fonts/MyriadCB.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MyriadCB.eot') format('embedded-opentype'),
+		url('fonts/MyriadCB.ttf') format('truetype'), 
+		url('fonts/MyriadCB.woff') format('woff');
+}
+*/
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
@@ -214,7 +229,7 @@ img {
 	font-size: 11px;
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
-	font-family: Myriad-Bold;
+	font-family: 'Myriad-Condensed';
 	text-transform: uppercase;
 	color: #636363;
 }
@@ -1279,7 +1294,7 @@ img.aligncenter {
 }
 .entry-content dt,
 .comment-content dt {
-	font-family: Myriad-Bold;
+	font-family: 'Myriad-Condensed';
 /*	//font-weight: bold; */
 	line-height: 1.714285714;
 }
@@ -1541,8 +1556,9 @@ article.format-link header {
 	font-size: 11px;
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
-	font-family: Myriad-Bold;
+	font-family: 'Myriad-Condensed';
 	font-style: italic;
+	font-weight: bold;
 	text-transform: uppercase;
 	color: #848484;
 	background-color: #ebebeb;
