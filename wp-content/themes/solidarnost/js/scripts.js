@@ -92,13 +92,13 @@ var preferredWidth = 960;
 var displayWidth = $(window).width();
 if(displayWidth<960){
 var percentage = displayWidth / preferredWidth;
-var newFontSize = Math.floor(26 * percentage) - 1;
+var newFontSize = Math.floor(22 * percentage) - 1;
 var newFontSize2 = Math.floor(18 * percentage) - 1;
 $(".main-navigation li a").css("font-size", newFontSize);
 $(".main-navigation li ul li a").css("font-size", newFontSize2);
 }else
 {
-$(".main-navigation li a").css("font-size", 26);
+$(".main-navigation li a").css("font-size", 22);
 $(".main-navigation li ul li a").css("font-size", 18);
 }
 

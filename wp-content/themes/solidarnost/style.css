@@ -1922,9 +1922,10 @@ img#wpstats {
 		white-space: nowrap;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		padding-top: 11px;
+		padding-top: 14px;
+		padding-bottom: 8px;
 		vertical-align: middle;
-		font-size: 26px
+		font-size: 22px
 	}
 	.main-navigation li a:hover {
 		color: white;
