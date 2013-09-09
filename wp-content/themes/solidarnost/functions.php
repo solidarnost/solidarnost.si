@@ -577,7 +577,7 @@ function my_search_form( $form ) {
 */
 $form='<form action="'.home_url( '/' ).'" method="get">
     <fieldset>
-        <input type="image" alt="Search" src="'.get_template_directory_uri().'/images/search.png" />
+        <input type="image" alt="Search" src="'.get_template_directory_uri().'/images/search-small.png" />
         <input type="text" name="s" id="search" style="vertical-align: top" size=15 value="'.get_search_query().'" />
     </fieldset>
 </form>';

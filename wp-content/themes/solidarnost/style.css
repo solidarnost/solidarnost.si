@@ -234,10 +234,9 @@ input,
 textarea {
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	font-family: inherit;
-	font-size: 16px;
-	padding: 6px;
-	padding: 0.428571429rem;
+	font-size: 14px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 button,
 input {
@@ -655,7 +654,7 @@ a:hover {
 	text-align: right;
 /*	border-bottom: 10px solid #71a238; */
 	margin-bottom: 15px;
-	height:40px;
+	height:21px;
 	padding: 5px;
 }
 .sform {
