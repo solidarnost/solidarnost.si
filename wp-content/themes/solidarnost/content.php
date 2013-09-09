@@ -20,7 +20,7 @@
 <!--			<?php the_post_thumbnail(); ?> -->
 	
 			<div class="cat-list">	<?php the_category(); ?></div>
-			<div class="date-published"><?php the_time('j. F Y'); ?></div>
+			<div class="date-published"><?php echo strtolower( get_the_time('j. F Y') ); ?></div>
 			<div class="social-media">
 				<div class="list"><!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style" addthis:url="<?php the_permalink();?>" addthis:title="<?php the_title(); ?>" addthis:description="<?php the_excerpt(); ?>">

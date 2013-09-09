@@ -1389,7 +1389,7 @@ img.aligncenter {
 .date-published {
 	position: relative;
 	text-align: right;
-	right:40px;
+	right:50px;
 	top:-50px;
 /*	padding: 4px 4px 0px 4px;
 	margin-bottom:10px;
@@ -2317,7 +2317,7 @@ border-radius: 0;
 		font-size:12pt;
 
 		top: 15px;
-		right: 30px;
+		right: 50px;
 		position:absolute;
 	}
 	.site-content article{
