@@ -673,10 +673,6 @@ a:hover {
 	margin-bottom: 15px;
 }
 
-.main-navigation li {
-	font-size: 19px;
-	line-height: 1.42857143;
-}
 .main-navigation a {
 	color: #5e5e5e;
 }
@@ -1922,14 +1918,14 @@ img#wpstats {
 	.main-navigation li a {
 		border-bottom: 0;
 		color: white;
-		line-height: 2rem;
+		line-height: 16px;
 		text-transform: uppercase;
 		white-space: nowrap;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		padding-top: 17px;
+		padding-top: 11px;
 		vertical-align: middle;
-		font-size: 24pt
+		font-size: 26px
 	}
 	.main-navigation li a:hover {
 		color: white;
@@ -1970,8 +1966,8 @@ img#wpstats {
 	}
 	.main-navigation li ul li a {
 		display: block;
-		padding: 2px 0px;
-		margin-top: 0px;
+		padding-top:4px;
+		padding-bottom: 0px;
 		margin-bottom: 0px;
 		border-bottom: 0;
 		color: white;
