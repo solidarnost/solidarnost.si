@@ -23,6 +23,7 @@ defined('WP_SITEURL') || define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'
 defined('WP_HOME') || define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 defined('WP_CONTENT_DIR') || define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 defined('WP_CONTENT_URL') || define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+
 defined('WP_DEFAULT_THEME') || define('WP_DEFAULT_THEME', 'solidarnost');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

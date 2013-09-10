@@ -632,7 +632,7 @@ a:hover {
         .logo {
 	text-align: middle;
 	vertical-align: middle;
-	max-width:35%;
+	max-width:45%;
 /*	display: inline-block !important; */
         }
 .logobanner {
@@ -640,7 +640,7 @@ a:hover {
 }
 .parole {
 	position:absolute;
-	max-width:60%;	
+	max-width:50%;	
 /*	margin-left:10%; */
 	right:0px;
 	bottom:30%;
