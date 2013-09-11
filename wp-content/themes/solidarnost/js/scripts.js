@@ -63,14 +63,14 @@ function resizeFont(){
 //Standard height, for which the body font size is correct
 var preferredWidth = 960;  
 
-var displayWidth = $(window).width();
+var displayWidth = jQuery(window).width();
 if(displayWidth<960){
 var percentage = displayWidth / preferredWidth;
 var newFontSize = Math.floor(64 * percentage) - 1;
-$(".parole").css("font-size", newFontSize);
+jQuery(".parole").css("font-size", newFontSize);
 }else
 {
-$(".parole").css("font-size", 64);
+jQuery(".parole").css("font-size", 64);
 }
 
 }
@@ -78,9 +78,9 @@ $(".parole").css("font-size", 64);
 function resizeCarousel(){
 
 var ratio=490/960;
-var width= $(".cycle-slideshow").width();
-$(".cycle-slideshow").css("height",ratio*width );
-$(".slides").css("height",ratio*width );
+var width= jQuery(".cycle-slideshow").width();
+jQuery(".cycle-slideshow").css("height",ratio*width );
+jQuery(".slides").css("height",ratio*width );
 //$(".slide-title").css("bottom","10%" );
 }
 
@@ -89,17 +89,17 @@ function resizeMenuText(){
 //Standard height, for which the body font size is correct
 var preferredWidth = 960;  
 
-var displayWidth = $(window).width();
+var displayWidth = jQuery(window).width();
 if(displayWidth<960){
 var percentage = displayWidth / preferredWidth;
 var newFontSize = Math.floor(22 * percentage) - 1;
 var newFontSize2 = Math.floor(18 * percentage) - 1;
-$(".main-navigation li a").css("font-size", newFontSize);
-$(".main-navigation li ul li a").css("font-size", newFontSize2);
+jQuery(".main-navigation li a").css("font-size", newFontSize);
+jQuery(".main-navigation li ul li a").css("font-size", newFontSize2);
 }else
 {
-$(".main-navigation li a").css("font-size", 22);
-$(".main-navigation li ul li a").css("font-size", 18);
+jQuery(".main-navigation li a").css("font-size", 22);
+jQuery(".main-navigation li ul li a").css("font-size", 18);
 }
 
 }
