@@ -115,8 +115,15 @@
 
 <div class="post-feat-wrap">
 <div class="post-feat">	
-<div class="post-feat-cat"><?php $category = get_the_category(); 
-echo "<a href='".get_category_link( $category[0]->term_id )."' title='". esc_attr( sprintf( __( "View all posts in %s" ), $category[0]->name ) ) . "'>".$category[0]->cat_name ."</a>"; ?></div>
+<div class="post-feat-cat">
+<?php 
+//	$category = get_the_category(); 
+	$args=array('orderby' => 'none');
+	$terms = wp_get_post_terms( $post->ID , 'category', $args);
+  	echo '<a href="' . esc_attr(get_term_link($terms[0], 'category')) . '" title="' . sprintf( __( "View all posts in %s" ), $terms[0]->name ) . '" ' . '>' . $terms[0]->name.'</a> '; 
+?>
+</div>
+
 <?php if (has_post_thumbnail()) : ?>
 <div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
 <?php elseif($category[0]->slug=="v-medijih") :?>
