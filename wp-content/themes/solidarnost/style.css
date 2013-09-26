@@ -544,7 +544,7 @@ body.custom-font-enabled {
 }
 a {
 	outline: none;
-	color: #71a238;
+	color: #c40008;
 }
 a:hover {
 	color: #0f3647;
@@ -655,7 +655,7 @@ a:hover {
 .parole:after {
 	font-family: Times;
 	font-weight: bold;
-	color: #71a238;	
+	color: #c40008;	
 	quotes: "\201C" "\201D";
 }
 
@@ -667,7 +667,7 @@ a:hover {
 #topbar {
 	background-color: #666666;
 	text-align: right;
-/*	border-bottom: 10px solid #71a238; */
+/*	border-bottom: 10px solid #c40008; */
 	margin-bottom: 15px;
 	height:21px;
 	padding: 5px;
@@ -683,7 +683,7 @@ a:hover {
 .main-navigation {
 	background-color: #666666;
 	text-align: center;
-	border-bottom: 5px solid #71a238;
+	border-bottom: 5px solid #c40008;
 	margin-bottom: 15px;
 }
 
@@ -802,7 +802,7 @@ Glej .site-content article !!!
 	padding: 4px 4px 0px 4px;
 	vertical-align: middle;
 	text-decoration: none;
-	background-color:  #71a238;
+	background-color:  #c40008;
 	color: #fff;
 	font-size: 11pt;
 	max-width: 32%;
@@ -949,7 +949,7 @@ jQuery SLIDER STYLES
 	left:48%;
 	display: none;
 	text-decoration: none;
-	background-color:  #71a238;
+	background-color:  #c40008;
 	color: #fff;
 	font-size: 20px;
 	width: 67px;
@@ -1001,7 +1001,7 @@ jQuery SLIDER STYLES
 
 
 .grnbar {
-	background-color: #71a238;
+	background-color: #c40008;
 	height: 5px;
 	overflow: hidden;
 }
@@ -1341,7 +1341,7 @@ img.aligncenter {
 	margin-bottom:10px;
 	vertical-align: middle;
 	text-decoration: none;
-	background-color:  #71a238;
+	background-color:  #c40008;
 	color: #fff;
 	font-size: 11pt;
 	width: auto;
@@ -1377,7 +1377,7 @@ img.aligncenter {
 	margin-left:90%;
 	vertical-align: middle;
 	text-decoration: none;
-	background-color:  #71a238;
+	background-color:  #c40008;
 	color: #fff;
 	font-size: 11pt;
 	z-index: 100;
@@ -1391,13 +1391,13 @@ img.aligncenter {
 	position: absolute;
 	top:00px;
 	right:00px;
-	color: #71a238;
+	color: #c40008;
 	background-color: #fff;
 	max-width:200px;
 	width: 120px;
 	padding: 20px 10px 20px 10px;
-	border-left: 1pt solid #71a238;
-	border-bottom: 1pt solid #71a238;
+	border-left: 1pt solid #c40008;
+	border-bottom: 1pt solid #c40008;
 }
 
 
@@ -1410,7 +1410,7 @@ img.aligncenter {
 	margin-bottom:10px;
 	vertical-align: middle;
 	text-decoration: none;
-	background-color:  #71a238;
+	background-color:  #c40008;
 	color: #fff;
 	font-size: 11pt;
 	max-width: 30%;
@@ -1426,8 +1426,8 @@ img.aligncenter {
 	margin:0px;
 	vertical-align: top;
 	word-wrap: break-word;
-	border-left: 5px solid #71a238;
-	border-top: 5px solid #71a238;
+	border-left: 5px solid #c40008;
+	border-top: 5px solid #c40008;
 	box-shadow: 1px 1px 5px #888888;
 	margin-bottom: 25px;
 }
@@ -1945,7 +1945,7 @@ img#wpstats {
 	}
 	.main-navigation li a:hover {
 		color: white;
-		background-color: #71a238;
+		background-color: #c40008;
 	}
 	.main-navigation li {
 		position: relative;
@@ -1973,8 +1973,8 @@ img#wpstats {
 	.main-navigation ul li:hover > ul {
 		border-left: 0;
 		display: block;
-		border-top: 5px solid #71a238;
-		border-bottom: 5px solid #71a238;
+		border-top: 5px solid #c40008;
+		border-bottom: 5px solid #c40008;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		min-width: 110%;
@@ -1993,13 +1993,13 @@ img#wpstats {
 		text-indent:10px;
 }
 	.main-navigation li ul li:hover {
-		background: #71a238;
+		background: #c40008;
 	}
 	.main-navigation .current-menu-ancestor > a,
 	.main-navigation .current_page_item > a,
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current_page_ancestor > a {
-		background: #71a238;
+		background: #c40008;
 	}
 	
 	
@@ -2240,7 +2240,7 @@ border-radius: 0;
 	.wrapper {
 		border-top: none;
 		box-shadow: none;
-		border-bottom: 10px solid #71a238;
+		border-bottom: 10px solid #c40008;
 	}
 	.site-content {
 		margin: 0;
@@ -2298,7 +2298,7 @@ border-radius: 0;
 	}
 	.logobanner{
 		display: block;
-		border-top: 10px solid #71a238;
+		border-top: 10px solid #c40008;
 		padding-top: 20px;
 		padding-bottom:20px;
 	}
@@ -2315,7 +2315,7 @@ border-radius: 0;
 		display: none;
 	}
 	.cat-list{
-		color:  #71a238;
+		color:  #c40008;
 		background: none;
 		max-width: 15%;
 		font-size:12pt;
@@ -2326,7 +2326,7 @@ border-radius: 0;
 		position: absolute;
 	}
 	.cat-list a {
-		color:  #71a238;
+		color:  #c40008;
 	}
 	.date-published{
 		right:0px;
