@@ -643,7 +643,7 @@ a:hover {
 	max-width:50%;	
 /*	margin-left:10%; */
 	right:0px;
-	bottom:30%;
+	bottom:40%;
 	vertical-align: middle;
 /* careful if changing font size! Look into js/script.js for resizing it */
 	font-size: 0px;
