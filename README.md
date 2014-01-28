@@ -8,7 +8,7 @@ git config --global user.name "Your Name"
 
 Pred prvo uporabo repozitorija solidarnost.si z githuba potegnemo klon:
 
-git clone --recursive  https://github.com/darh/solidarnost.si.git
+git clone --recursive  https://github.com/solidarnost/solidarnost.si.git
 
 V kolikor zelimo se celotno razlicico wordpressa, se premaknemo v direktorij solidarnost.si in tam vpisemo:
 
@@ -27,7 +27,7 @@ in posljemo na server:
 git push
 
 (prvic ne bo delovalo: zazenemo 
-git remote add origin https://github.com/darh/solidarnost.si.git 
+git remote add origin https://github.com/solidarnost/solidarnost.si.git 
 in nato git push)
 
 
