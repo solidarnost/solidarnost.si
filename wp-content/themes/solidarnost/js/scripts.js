@@ -66,11 +66,11 @@ var preferredWidth = 960;
 var displayWidth = jQuery(window).width();
 if(displayWidth<960){
 var percentage = displayWidth / preferredWidth;
-var newFontSize = Math.floor(50 * percentage) - 1;
+var newFontSize = Math.floor(35 * percentage) - 1;
 jQuery(".parole").css("font-size", newFontSize);
 }else
 {
-jQuery(".parole").css("font-size", 50);
+jQuery(".parole").css("font-size", 35);
 }
 
 }

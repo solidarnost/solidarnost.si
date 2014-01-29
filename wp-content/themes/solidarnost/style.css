@@ -640,10 +640,10 @@ a:hover {
 }
 .parole {
 	position:absolute;
-	max-width:50%;	
+	max-width:34%;	
 /*	margin-left:10%; */
 	right:0px;
-	bottom:40%;
+	bottom:22%;
 	vertical-align: middle;
 /* careful if changing font size! Look into js/script.js for resizing it */
 	font-size: 0px;

@@ -91,10 +91,10 @@
 						if ( $slider_timeout != 0 || $slider_timeout != '' ) {
 							echo 'data-cycle-timeout="' . $slider_timeout . '000" data-cycle-pause-on-hover="true"';
 						} else {
-							echo 'data-cycle-timeout="5000"';
+							echo 'data-cycle-timeout="8000"';
 						}
 					} else {
-						echo 'data-cycle-timeout="5000"';
+						echo 'data-cycle-timeout="8000"';
 					}
 				  ?> data-cycle-prev="#sliderprev" data-cycle-next="#slidernext">
                   	<?php if ( get_theme_mod('solidarnost_slider_pager') ) : ?>

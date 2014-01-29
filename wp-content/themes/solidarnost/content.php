@@ -123,7 +123,6 @@
   	echo '<a href="' . esc_attr(get_term_link($terms[0], 'category')) . '" title="' . sprintf( __( "View all posts in %s" ), $terms[0]->name ) . '" ' . '>' . $terms[0]->name.'</a> '; 
 ?>
 </div>
-
 <?php if (has_post_thumbnail()) : ?>
 <div class="post-feat-thumb"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
 <?php elseif($category[0]->slug=="v-medijih") :?>
