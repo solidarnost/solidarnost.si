@@ -66,11 +66,11 @@ var preferredWidth = 960;
 var displayWidth = jQuery(window).width();
 if(displayWidth<960){
 var percentage = displayWidth / preferredWidth;
-var newFontSize = Math.floor(35 * percentage) - 1;
+var newFontSize = Math.floor(28 * percentage) - 1;
 jQuery(".parole").css("font-size", newFontSize);
 }else
 {
-jQuery(".parole").css("font-size", 35);
+jQuery(".parole").css("font-size", 28);
 }
 
 }
@@ -92,14 +92,14 @@ var preferredWidth = 960;
 var displayWidth = jQuery(window).width();
 if(displayWidth<960){
 var percentage = displayWidth / preferredWidth;
-var newFontSize = Math.floor(22 * percentage) - 1;
-var newFontSize2 = Math.floor(18 * percentage) - 1;
+var newFontSize = Math.floor(16 * percentage) - 1;
+var newFontSize2 = Math.floor(13 * percentage) - 1;
 jQuery(".main-navigation li a").css("font-size", newFontSize);
 jQuery(".main-navigation li ul li a").css("font-size", newFontSize2);
 }else
 {
-jQuery(".main-navigation li a").css("font-size", 22);
-jQuery(".main-navigation li ul li a").css("font-size", 18);
+jQuery(".main-navigation li a").css("font-size", 16);
+jQuery(".main-navigation li ul li a").css("font-size", 13);
 }
 
 }

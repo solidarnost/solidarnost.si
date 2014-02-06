@@ -177,46 +177,6 @@ img {
 	content: "";
 }
 
-
-/* =Embed fonts */
-@font-face {font-family: 'Myriad-Condensed';
-	src: 
-		url('fonts/MyriadC.eot?#iefix') format('embedded-opentype'),
-		url('fonts/MyriadC.eot') format('embedded-opentype'),
-		url('fonts/MyriadC.ttf') format('truetype'), 
-		url('fonts/MyriadC.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {font-family: 'Myriad-Condensed';
-	src: 
-		url('fonts/MyriadCB.eot?#iefix') format('embedded-opentype'),
-		url('fonts/MyriadCB.eot') format('embedded-opentype'),
-		url('fonts/MyriadCB.ttf') format('truetype'), 
-		url('fonts/MyriadCB.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {font-family: 'Myriad-Condensed';
-	src: 
-		url('fonts/MyriadCI.eot?#iefix') format('embedded-opentype'),
-		url('fonts/MyriadCI.eot') format('embedded-opentype'),
-		url('fonts/MyriadCI.ttf') format('truetype'), 
-		url('fonts/MyriadCI.woff') format('woff');
-	font-weight: normal;
-	font-style: italic;
-}
-/*
-@font-face {font-family: 'Myriad-Bold';
-	src: 
-		url('fonts/MyriadCB.eot?#iefix') format('embedded-opentype'),
-		url('fonts/MyriadCB.eot') format('embedded-opentype'),
-		url('fonts/MyriadCB.ttf') format('truetype'), 
-		url('fonts/MyriadCB.woff') format('woff');
-}
-*/
-
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
@@ -227,9 +187,8 @@ img {
 .entry-content th,
 .comment-content th {
 	font-size: 11px;
-	font-size: 0.785714286rem;
 	line-height: 2.181818182;
-	font-family: 'Myriad-Condensed';
+	font-family: 'Arial';
 	text-transform: uppercase;
 	color: #636363;
 }
@@ -239,7 +198,6 @@ article.format-quote footer.entry-meta,
 article.format-link footer.entry-meta,
 article.format-status footer.entry-meta {
 	font-size: 11px;
-	font-size: 0.785714286rem;
 	line-height: 2.181818182;
 }
 
@@ -249,7 +207,7 @@ input,
 textarea {
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	font-size: 14px;
+	font-size: 16px;
 	padding-right: 5px;
 	padding-left: 5px;
 }
@@ -528,19 +486,18 @@ html {
 	font-size: 87.5%;
 }
 body {
-	font-size: 14px;
-	font-size: 1.3rem;
+	font-size: 16px;
 /*
 	//font-family: Helvetica, Arial, sans-serif;
 	//font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 */
-	font-family: "Myriad-Condensed";
+	font-family: "Arial";
 /*	text-rendering: optimizeLegibility; */
 	color: #444;
 }
 body.custom-font-enabled {
 /*	//font-family: "Open Sans", Helvetica, Arial, sans-serif; */
-	font-family: "Myriad-Condensed";
+	font-family: "Arial";
 }
 a {
 	outline: none;
@@ -608,7 +565,6 @@ a:hover {
 }
 .site-header h1 {
 	font-size: 24px;
-	font-size: 1.714285714rem;
 	line-height: 1.285714286;
 	margin-bottom: 14px;
 	margin-bottom: 1rem;
@@ -616,7 +572,6 @@ a:hover {
 .site-header h2 {
 	font-weight: normal;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
 }
@@ -640,10 +595,10 @@ a:hover {
 }
 .parole {
 	position:absolute;
-	max-width:34%;	
+	max-width:32%;	
 /*	margin-left:10%; */
 	right:0px;
-	bottom:22%;
+	bottom:30%;
 	vertical-align: middle;
 /* careful if changing font size! Look into js/script.js for resizing it */
 	font-size: 0px;
@@ -799,13 +754,13 @@ Glej .site-content article !!!
 	position: absolute;
 	left:0px;
 	top:0px;
-	padding: 4px 4px 0px 4px;
+	padding: 4px 4px 4px 4px;
 	vertical-align: middle;
 	text-decoration: none;
 	background-color:  #c40008;
 	color: #fff;
-	font-size: 11pt;
-	max-width: 32%;
+	font-size: 13px;
+	max-width: 42%;
 	z-index: 100;
 }
 .post-feat-cat a {
@@ -829,8 +784,7 @@ Glej .site-content article !!!
 
 
 	.post-feat .post-feat-title {
-		font-size: 24px;
-		line-height: 24px;
+		line-height: 20px;
 		color: #fff;	
 		margin-bottom: 2px;
 		margin-right:20px;
@@ -844,6 +798,7 @@ Glej .site-content article !!!
 
 .post-feat-excerpt{
 	margin: 10px;
+	font-size: 14px;
 }
 .post-feat-more {
 	text-align: center;
@@ -852,9 +807,9 @@ Glej .site-content article !!!
 	bottom:0px;
 	vertical-align: middle;
 	text-decoration: none;
-	margin-bottom:-6px;
+	margin-bottom:-3px;
 	color: #fff;
-	font-size: 11pt;
+	font-size: 13px;
 	max-width: 30%;
 	z-index: 100;
 }
@@ -918,7 +873,7 @@ jQuery SLIDER STYLES
 	
 	.slides .slide-content {
 		position: absolute;
-		width: 30%;
+		width: 35%;
 		height: auto;
 		max-height: 350px;
 		left: 0px;
@@ -926,10 +881,11 @@ jQuery SLIDER STYLES
 		background: url(images/trans.png);
 		padding: 15px 20px;
 		color: #fff;
+		font-size:14px;
 	}
 	
 	.slides .slide-title {
-		font-size: 26px;
+		font-size: 20px;
 		font-weight: 400;
 		color: #fff;
 		margin-bottom: 15px;
@@ -986,7 +942,6 @@ jQuery SLIDER STYLES
 	overflow: hidden;
 }
 .cycle-pager span { 
-    font-family: arial; 
 	font-size: 50px; 
 	width: 16px; 
 	height: 16px; 
@@ -1018,7 +973,6 @@ footer[role="contentinfo"] {
 	border-top: 1px solid #ededed;
 	clear: both;
 	font-size: 12px;
-	font-size: 0.857142857rem;
 	line-height: 2;
 	max-width: 960px;
 	max-width: 68.571428571rem;
@@ -1053,7 +1007,7 @@ float: right;
 cursor: pointer;
 /*text-decoration: underline; */
 color: black; /*rgb(0,0,198); */
-font-size: 15pt;
+font-size: 16px;
 }
 
 
@@ -1070,7 +1024,6 @@ font-size: 15pt;
 }
 .entry-header .entry-title {
 	font-size: 20px;
-	font-size: 1.428571429rem;
 	line-height: 1.2;
 	/*font-family: Myriad-Bold; */
 	font-weight: bold;
@@ -1088,7 +1041,6 @@ font-size: 15pt;
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
 }
@@ -1105,7 +1057,6 @@ article.sticky .featured-post {
 	border-bottom: 4px double #ededed;
 	color: #757575;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 3.692307692;
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
@@ -1177,7 +1128,6 @@ article.sticky .featured-post {
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 	line-height: 1.4;
-	font-size:15pt;
 }
 .entry-content ol,
 .comment-content ol,
@@ -1294,7 +1244,7 @@ img.aligncenter {
 }
 .entry-content dt,
 .comment-content dt {
-	font-family: 'Myriad-Condensed';
+	font-family: 'Arial';
 /*	//font-weight: bold; */
 	line-height: 1.714285714;
 }
@@ -1337,13 +1287,13 @@ img.aligncenter {
 	text-align: center;
 	left:-25px;
 	top:-25px;
-	padding: 4px 4px 0px 4px;
+	padding: 4px 4px 4px 4px;
 	margin-bottom:10px;
 	vertical-align: middle;
 	text-decoration: none;
 	background-color:  #c40008;
 	color: #fff;
-	font-size: 11pt;
+	font-size: 13px;
 	width: auto;
 	max-width: 40%;
 	z-index: 100;
@@ -1379,7 +1329,7 @@ img.aligncenter {
 	text-decoration: none;
 	background-color:  #c40008;
 	color: #fff;
-	font-size: 11pt;
+	font-size: 13px;
 	z-index: 100;
 }
 .social-media .list{
@@ -1404,8 +1354,9 @@ img.aligncenter {
 .date-published {
 	position: relative;
 	text-align: right;
-	right:50px;
-	top:-50px;
+	right:70px;
+	top:-52px;
+	font-size: 13px;
 /*	padding: 4px 4px 0px 4px;
 	margin-bottom:10px;
 	vertical-align: middle;
@@ -1437,9 +1388,7 @@ img.aligncenter {
 }
 footer.entry-meta {
 	margin-top: 24px;
-	margin-top: 1.714285714rem;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
 }
@@ -1556,7 +1505,7 @@ article.format-link header {
 	font-size: 11px;
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
-	font-family: 'Myriad-Condensed';
+	font-family: 'Arial';
 	font-style: italic;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1570,7 +1519,6 @@ article.format-link .entry-content {
 }
 article.format-link .entry-content a {
 	font-size: 22px;
-	font-size: 1.571428571rem;
 	line-height: 1.090909091;
 	text-decoration: none;
 }
@@ -1586,7 +1534,6 @@ article.format-quote .entry-content blockquote {
 	padding: 24px 24px 0;
 	padding: 1.714285714rem 1.714285714rem 0;
 	font-size: 15px;
-	font-size: 1.071428571rem;
 	line-height: 1.6;
 	font-style: normal;
 	color: #6a6a6a;
@@ -1936,12 +1883,12 @@ img#wpstats {
 		line-height: 16px;
 		text-transform: uppercase;
 		white-space: nowrap;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: 10px;
+		padding-right: 10px;
 		padding-top: 14px;
 		padding-bottom: 8px;
 		vertical-align: middle;
-		font-size: 22px
+		font-size: 16px
 	}
 	.main-navigation li a:hover {
 		color: white;
@@ -2121,7 +2068,8 @@ img#wpstats {
 @media screen and (min-width: 960px) {
 
 	.social-media{
-		margin-left:90%;
+		margin-left:88%;
+		padding-bottom: 4px;
 	}
 	.social-media-text{
 	display: inherit;
